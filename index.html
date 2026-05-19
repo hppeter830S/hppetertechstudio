@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HP Peter Tech Studio | Web Design & Digital Solutions</title>
+    <meta
+      name="description"
+      content="HP Peter Tech Studio – Professional web design, QR code generation, landing pages and digital solutions."
+    />
+    <link rel="icon" href="images/hpPeterTechStudioLogo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== SITE HEADER ===== -->
+    <header id="site-header">
+      <div class="container header-inner">
+        <img
+          src="images/hpPeterTechStudioLogo.png"
+          alt="HP Peter Tech Studio Logo"
+          class="header-logo"
+        />
+        <span class="header-brand">HP Peter Tech Studio</span>
+      </div>
+    </header>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar">
+      <div class="container nav-inner">
+        <div class="nav-logo-mini">
+          <img src="images/hpPeterTechStudioLogo.png" alt="Logo" />
+          <span>HP Peter Tech Studio</span>
+        </div>
+        <div class="nav-links">
+          <a href="#hero" class="active">Home</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary" style="margin-top: 0.5rem"
+          >Get a Quote</a
+        >
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="hero-badge">🚀 Digital Innovation Studio</div>
+        <h1 class="hero-title">
+          We <span class="blue">Design</span>, Build<br />& Deliver Results
+        </h1>
+        <div class="hero-typing-wrap">We <span id="typed-text"></span></div>
+        <p class="hero-desc">
+          HP Peter Tech Studio crafts stunning digital experiences—websites, QR
+          solutions, landing pages, and beyond—tailored to grow your business.
+        </p>
+        <div class="hero-btns">
+          <a href="#services" class="btn btn-primary"
+            ><i class="fa fa-rocket"></i> Explore Services</a
+          >
+          <a href="#portfolio" class="btn btn-outline"
+            ><i class="fa fa-eye"></i> View Portfolio</a
+          >
+        </div>
+      </div>
+
+      <!-- Hero Slider -->
+      <div class="hero-slider-wrap">
+        <div class="hero-slider">
+          <div class="slide active slide-1">
+             <div class="slide-content"> 
+               <div style="color: var(--blue)" class="slide-icon"><!--🌐 --></div>
+              <div class="slide-title">Professional Website Development</div>
+              <div class="slide-desc">
+                Modern, fast, and responsive websites built to impress your
+                clients
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-2">
+            <div class="slide-content">
+              <div class="slide-icon"><!--📱--></div>
+              <div class="slide-title">QR Code Solutions & Tools</div>
+              <div class="slide-desc">
+                Custom QR codes for menus, business cards, marketing campaigns
+                and more
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-3">
+            <div class="slide-content">
+              <div class="slide-icon"><!--🎯--></div>
+              <div class="slide-title">Landing Pages That Convert</div>
+              <div class="slide-desc">
+                High-converting landing pages designed to turn visitors into
+                customers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="section">
+      <div class="container">
+        <span class="tag" data-aos="fade-up">What We Do</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Our Core Services
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+          From concept to launch, we deliver digital solutions that drive real
+          results for your business.
+        </p>
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="service-icon">🌐</div>
+            <div>
+              <img style="border-radius: 10px;" src="images/websiteCreationImg.png" alt="websiteCreationImg">
+            </div>
+            <h3>Website Development</h3>
+            <p>
+              Custom responsive websites built with modern technologies. Fast,
+              SEO-friendly, and designed to convert visitors into customers.
+            </p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="service-icon">📱</div>
+            <div>
+              <img style="border-radius: 10px;" src="images/qrCodeSlutionsImage.png" alt="qrCodeSlutionsImage">
+            </div>
+            <h3>QR Code Generation</h3>
+            <p>
+              Dynamic and static QR codes for businesses, menus, vCards, links,
+              and campaigns. Track scans and manage codes easily.
+            </p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="service-icon">🎯</div>
+            <div>
+              <img style="border-radius: 10px;" src="images/landingPagesImg.png" alt="qrCodeSlutionsImage">
+            </div>
+            <h3>Landing Page Design</h3>
+            <p>
+              High-converting landing pages that capture leads and drive sales.
+              A/B tested layouts with compelling CTAs.
+            </p>
+          </div>
+
+          <!--<div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <p>User-centered interface design that looks beautiful and feels intuitive. Wireframes, prototypes, and full design systems.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-icon">📊</div>
+        <h3>Digital Marketing Setup</h3>
+        <p>Analytics integration, SEO optimization, social media setup, and online presence audits to boost your visibility.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-icon">🛒</div>
+        <h3>E-Commerce Solutions</h3>
+        <p>Online stores with seamless checkout, product management, and payment gateway integration tailored to your brand.</p>
+      </div>-->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COUNTERS ===== -->
+    <section id="counters" class="section">
+      <div class="container">
+        <div class="counters-grid">
+          <div class="counter-card" data-aos="zoom-in">
+            <div class="counter-icon">🌐</div>
+            <div class="counter-number" data-target="120" data-suffix="+">
+              0+
+            </div>
+            <div class="counter-label">Websites Built</div>
+          </div>
+          <div class="counter-card" data-aos="zoom-in" data-aos-delay="80">
+            <div class="counter-icon">📱</div>
+            <div class="counter-number" data-target="500" data-suffix="+">
+              0+
+            </div>
+            <div class="counter-label">QR Codes Generated</div>
+          </div>
+          <div class="counter-card" data-aos="zoom-in" data-aos-delay="160">
+            <div class="counter-icon">✅</div>
+            <div class="counter-number" data-target="85" data-suffix="+">
+              0+
+            </div>
+            <div class="counter-label">Demo Projects Done</div>
+          </div>
+          <div class="counter-card" data-aos="zoom-in" data-aos-delay="240">
+            <div class="counter-icon">😊</div>
+            <div class="counter-number" data-target="95" data-suffix="+">
+              0+
+            </div>
+            <div class="counter-label">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <span class="tag" data-aos="fade-up">Our Work</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Portfolio Highlights
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+          A selection of projects we're proud of. Click any card for more
+          details.
+        </p>
+        <div class="portfolio-grid">
+          <div
+            class="portfolio-card"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-lightbox="true"
+            data-icon="🍕"
+            data-title="Restaurant Booking Website"
+            data-desc="A fully responsive restaurant website featuring online table bookings, a digital menu with QR code integration, and an admin panel to manage reservations in real time."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #1e3a5f, #0a1628)"
+              >
+                🍕
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Restaurant Booking Website</h3>
+              <p>
+                Full-stack restaurant site with table reservations & digital
+                menu.
+              </p>
+              <div class="portfolio-tags">
+                <span class="ptag">HTML/CSS</span>
+                <span class="ptag">JavaScript</span>
+                <span class="ptag">QR Code</span>
+              </div>
+              <span
+                class="btn btn-outline"
+                style="font-size: 0.85rem; padding: 0.5rem 1.2rem"
+                >View Details →</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="portfolio-card"
+            data-aos="fade-up"
+            data-aos-delay="80"
+            data-lightbox="true"
+            data-icon="🏋️"
+            data-title="Gym & Fitness Landing Page"
+            data-desc="A high-converting landing page for a local gym featuring animated stats, membership plans, trainer profiles, and a WhatsApp contact integration that boosted sign-ups by 40%."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #1a2744, #0f172a)"
+              >
+                🏋️
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Gym & Fitness Landing Page</h3>
+              <p>
+                High-converting landing page with membership plans & animations.
+              </p>
+              <div class="portfolio-tags">
+                <span class="ptag">Landing Page</span>
+                <span class="ptag">Animations</span>
+              </div>
+              <span
+                class="btn btn-outline"
+                style="font-size: 0.85rem; padding: 0.5rem 1.2rem"
+                >View Details →</span
+              >
+            </div>
+          </div>
+
+          <!-- <div 
+            class="portfolio-card"
+            data-aos="fade-up"
+            data-aos-delay="160"
+            data-lightbox="true"
+            data-icon="🛍️"
+            data-title="E-Commerce Store Demo"
+            data-desc="A demo e-commerce storefront built with modern UX patterns including product filtering, cart functionality, wishlist, and a complete checkout flow with mobile-first design."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #0e2a40, #0a1628)"
+              >
+                🛍️
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>E-Commerce Store Demo</h3>
+              <p>
+                Full-featured online store with cart, filters, and checkout.
+              </p>
+              <div class="portfolio-tags">
+                <span class="ptag">E-Commerce</span>
+                <span class="ptag">UX/UI</span>
+              </div>
+              <span
+                class="btn btn-outline"
+                style="font-size: 0.85rem; padding: 0.5rem 1.2rem"
+                >View Details →</span
+              >
+            </div>
+          </div>-->
+
+          <div
+            class="portfolio-card"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-lightbox="true"
+            data-icon="📱"
+            data-title="QR Menu System"
+            data-desc="A dynamic QR code menu system for cafes and restaurants. Customers scan to view the full menu, specials, and prices. Easy update panel for restaurant owners with no coding needed."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #1e3a5f, #0d1b35)"
+              >
+                📱
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>QR Menu System</h3>
+              <p>Scan-to-order digital menus for cafés and restaurants.</p>
+              <div class="portfolio-tags">
+                <span class="ptag">QR Code</span>
+                <span class="ptag">Web App</span>
+              </div>
+              <span
+                class="btn btn-outline"
+                style="font-size: 0.85rem; padding: 0.5rem 1.2rem"
+                >View Details →</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="portfolio-card"
+            data-aos="fade-up"
+            data-aos-delay="80"
+            data-lightbox="true"
+            data-icon="🏢"
+            data-title="Corporate Business Site"
+            data-desc="A professional multi-page website for a consulting firm featuring team profiles, services, a blog section, Google Maps integration, and a full contact system with email notifications."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #1a2744, #0a0f1e)"
+              >
+                🏢
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Corporate Business Site</h3>
+              <p>Multi-page professional website for a consulting firm.</p>
+              <div class="portfolio-tags">
+                <span class="ptag">Multi-page</span>
+                <span class="ptag">SEO</span>
+              </div>
+              <span
+                class="btn btn-outline"
+                style="font-size: 0.85rem; padding: 0.5rem 1.2rem"
+                >View Details →</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="portfolio-card"
+            data-aos="fade-up"
+            data-aos-delay="160"
+            data-lightbox="true"
+            data-icon="🎓"
+            data-title="School Portal Website"
+            data-desc="An informational and interactive school website featuring news, event calendar, staff directory, admissions form, and a parent portal with announcements and document downloads."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #0f172a, #1e3a5f)"
+              >
+                🎓
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>School Portal Website</h3>
+              <p>
+                Interactive school site with events, news, and parent portal.
+              </p>
+              <div class="portfolio-tags">
+                <span class="ptag">Portal</span>
+                <span class="ptag">Responsive</span>
+              </div>
+              <span
+                class="btn btn-outline"
+                style="font-size: 0.85rem; padding: 0.5rem 1.2rem"
+                >View Details →</span
+              >
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 2.5rem" data-aos="fade-up">
+          <a href="portfolio.html" class="btn btn-primary"
+            ><i class="fa fa-th"></i> View Full Portfolio</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox-overlay">
+      <div class="lightbox-box">
+        <div class="lightbox-close">✕</div>
+        <div class="lightbox-icon"></div>
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-desc"></p>
+        <a href="#contact" class="btn btn-primary">Get Similar Project →</a>
+      </div>
+    </div>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <span class="tag" data-aos="fade-up">Client Feedback</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          What Clients Say
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+          Real feedback from real clients who trusted us to build their digital
+          presence.
+        </p>
+
+        <div
+          class="testimonials-slider"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="testimonials-track">
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                  HP Peter Tech Studio built our restaurant website from scratch, and the results exceeded our expectations. The digital QR code menu has helped us reduce printing costs while making it easier for customers to explore our meals and services. Their team was professional, creative, and delivered the project quickly with excellent support throughout the process.
+                </p>
+                <div class="testimonial-avatar">👨‍💼</div>
+                <div class="testimonial-name">TTB Bar & Restaurant</div>
+                <div class="testimonial-role">Bar&Restaurant, Ngozi</div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                  They helped our business become more visible online with a clean and professional website design. Our sewing materials and products are now easier for customers to explore and discover. We truly appreciated their creativity, professionalism, and support.
+                </p>
+                <div class="testimonial-avatar">💪</div>
+                <div class="testimonial-name">Bizima Company</div>
+                <div class="testimonial-role">A Company that sells sewing materials</div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                  Working with this team was a great experience. They created a professional online presence for our gutter installation and repair business. Our clients can now easily discover our services and contact us quickly. The website looks modern, clean, and trustworthy.
+                </p>
+                <div class="testimonial-avatar">🏢</div>
+                <div class="testimonial-name">Ido GutterFix</div>
+                <div class="testimonial-role">Hardware shop, Ngozi</div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                  Our school needed a professional online presence and HP Peter
+                  Tech Studio delivered beyond expectations. Parents love the
+                  new site and we get compliments every day. Very talented team!
+                </p>
+                <div class="testimonial-avatar">🎓</div>
+                <div class="testimonial-name">Sr. Marie-Claire</div>
+                <div class="testimonial-role">School Director</div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                  Fast, affordable, and reliable. They built our e-commerce demo
+                  site exactly as we wanted. The mobile version is especially
+                  good. Will definitely work with them again for future
+                  projects!
+                </p>
+                <div class="testimonial-avatar">🛍️</div>
+                <div class="testimonial-name">Diane R.</div>
+                <div class="testimonial-role">Online Store Owner</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials-nav">
+            <button class="t-prev">‹</button>
+            <div class="t-dots">
+              <span class="active"></span>
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <button class="t-next">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about-visual" data-aos="fade-right">
+            <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+            <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+            <div class="about-logo-wrap">
+              <img src="images/hpPeterTechStudioLogo.png" alt="HP Peter Tech Studio" />
+            </div>
+          </div>
+          <div class="about-text" data-aos="fade-left" data-aos-delay="100">
+            <span class="tag">About Us</span>
+            <h2>
+              Building the Digital Future,
+              <span style="color: var(--blue-glow)">One Project at a Time</span>
+            </h2>
+            <p>
+              HP Peter Tech Studio is a passionate digital agency focused on
+              helping businesses and individuals thrive online. We specialize in
+              creating stunning, fast, and functional websites, QR code
+              solutions, and digital marketing assets.
+            </p>
+            <p>
+              Our mission is simple: deliver high-quality digital work that
+              creates real impact. Whether you're a startup, a growing business,
+              or an established brand, we bring the expertise and creativity to
+              make your vision a reality.
+            </p>
+            <div class="about-features">
+              <div class="about-feature">
+                <span>✓</span> Mobile-first, responsive design on every project
+              </div>
+              <div class="about-feature">
+                <span>✓</span> Fast delivery without compromising on quality
+              </div>
+              <div class="about-feature">
+                <span>✓</span> Ongoing support after project completion
+              </div>
+              <div class="about-feature">
+                <span>✓</span> Transparent pricing — no hidden fees
+              </div>
+              <div class="about-feature">
+                <span>✓</span> SEO-optimized builds from day one
+              </div>
+            </div>
+            <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <span class="tag" data-aos="fade-up">Get In Touch</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Let's Work Together
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+          Have a project in mind? Send us a message and we'll get back to you
+          within 24 hours.
+        </p>
+        <div class="contact-inner">
+          <div class="contact-info" data-aos="fade-right">
+            <h2>
+              Ready to Start<br /><span style="color: var(--blue-glow)"
+                >Your Project?</span
+              >
+            </h2>
+            <p>
+              Reach out via the form, WhatsApp, or email. We respond quickly and
+              love talking about new projects — big or small!
+            </p>
+            <div class="contact-channels">
+              <a
+                href="https://wa.me/25768857061?text=Hello%20HP%20Peter%20Tech%20Studio%2C%20I%20need%20a%20website"
+                class="contact-channel"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="channel-icon wa">
+                  <i
+                    class="fab fa-whatsapp"
+                    style="color: #25d366; font-size: 1.4rem"
+                  ></i>
+                </div>
+                <div class="channel-text">
+                  <strong>WhatsApp Us</strong>
+                  <span>Quick replies — chat with us now</span>
+                </div>
+              </a>
+              <a
+                href="mailto:habimanaplacide257@gmail.com"
+                class="contact-channel"
+              >
+                <div class="channel-icon em">
+                  <i
+                    class="fas fa-envelope"
+                    style="color: var(--blue-glow); font-size: 1.2rem"
+                  ></i>
+                </div>
+                <div class="channel-text">
+                  <strong>Send an Email</strong>
+                  <span>habimanaplacide257@gmail.com</span>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfkb4GOG4YyKPy1nyayB4lBmbEWIvNlohmevWV8GoGS0vg60Q/viewform?usp=preview"
+              >
+                <button class="btn">Fill The Form For Your Project</button></a
+              >
+            </div>
+          </div>
+
+          <div
+            class="contact-form-wrap"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
+            <!-- <form 
+              id="contact-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service">
+                  <option value="">Select a service…</option>
+                  <option>Website Development</option>
+                  <option>QR Code Generation</option>
+                  <option>Landing Page Design</option>
+                  <option>E-Commerce Store</option>
+                  <option>UI/UX Design</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your project…"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%; justify-content: center"
+              >
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+              <div class="form-success">
+                ✅ Message sent! We'll get back to you soon.
+              </div>
+            </form>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="images/hpPeterTechStudioLogo.png" alt="Logo" />
+              <span>HP Peter Tech Studio</span>
+            </div>
+            <p>
+              Building digital experiences that connect, convert, and inspire.
+              Your vision, our expertise.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/profile.php?id=61583111527157"
+                class="social-icon"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/placide-habimana-944597352/"
+                class="social-icon"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://wa.me/25768857061"
+                class="social-icon"
+                aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html">Web Development</a></li>
+              <li><a href="services.html">QR Code Tools</a></li>
+              <li><a href="services.html">Landing Pages</a></li>
+              <!-- <li><a href="services.html">UI/UX Design</a></li>
+              <li><a href="services.html">E-Commerce</a></li> -->
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="terms.html">Terms of Use</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © 2025
+            <a
+              style="color: blue"
+              href="https://hppeter830s.github.io/hppetertech/"
+              >HP Peter Tech Studio</a
+            >. All rights reserved.
+          </p>
+          <div class="footer-legal">
+            <a href="terms.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | HP Peter Tech Studio</title>
+  <link rel="icon" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:2.5rem;}
+    .value-card{background:var(--dark-2);border:1px solid rgba(37,99,235,.15);border-radius:var(--radius-lg);padding:2rem;text-align:center;transition:var(--transition);}
+    .value-card:hover{transform:translateY(-6px);border-color:rgba(37,99,235,.4);}
+    .value-icon{font-size:2.5rem;margin-bottom:1rem;}
+    .value-card h3{font-family:var(--font-display);font-weight:700;margin-bottom:.5rem;}
+    .value-card p{color:var(--gray-mid);font-size:.9rem;}
+    .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-top:2.5rem;}
+    .team-card{background:var(--dark-2);border:1px solid rgba(37,99,235,.12);border-radius:var(--radius-lg);padding:2rem 1.5rem;text-align:center;transition:var(--transition);}
+    .team-card:hover{transform:translateY(-5px);border-color:rgba(37,99,235,.3);}
+    .team-avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 1rem;border:3px solid rgba(37,99,235,.3);}
+    .team-card h3{font-family:var(--font-display);font-weight:700;margin-bottom:.25rem;}
+    .team-card p{color:var(--gray-mid);font-size:.85rem;}
+    .timeline{position:relative;max-width:700px;margin:2.5rem auto 0;padding-left:2rem;}
+    .timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--blue),var(--cyan));}
+    .tl-item{position:relative;margin-bottom:2.5rem;padding-left:1.5rem;}
+    .tl-dot{position:absolute;left:-2.4rem;top:.25rem;width:14px;height:14px;border-radius:50%;background:var(--blue);border:3px solid var(--dark);box-shadow:0 0 10px rgba(37,99,235,.5);}
+    .tl-year{font-family:var(--font-display);font-weight:700;color:var(--blue-glow);font-size:.9rem;margin-bottom:.25rem;}
+    .tl-title{font-family:var(--font-display);font-weight:700;margin-bottom:.3rem;}
+    .tl-desc{color:var(--gray-mid);font-size:.9rem;}
+  </style>
+</head>
+<body>
+<header id="site-header"><div class="container header-inner">
+  <a href="index.html"><img src="images/logo.png" alt="Logo" class="header-logo" /></a>
+  <a href="index.html" class="header-brand">HP Peter Tech Studio</a>
+</div></header>
+<nav id="navbar"><div class="container nav-inner">
+  <div class="nav-logo-mini"><img src="images/logo.png" alt="Logo" /><span>HP Peter Tech Studio</span></div>
+  <div class="nav-links">
+    <a href="index.html">Home</a><a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a><a href="about.html" class="active">About</a><a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+  <button class="hamburger"><span></span><span></span><span></span></button>
+</div>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+  <a href="about.html">About</a><a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:.5rem">Get a Quote</a>
+</div></nav>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="tag">Who We Are</span>
+    <h1>About HP Peter Tech Studio</h1>
+    <p>A passionate team turning digital ideas into powerful online realities.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="about-inner" data-aos="fade-up">
+      <div class="about-visual" data-aos="fade-right">
+        <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+        <div class="about-logo-wrap"><img src="images/logo.png" alt="HP Peter Tech Studio" /></div>
+      </div>
+      <div class="about-text" data-aos="fade-left" data-aos-delay="100">
+        <span class="tag">Our Story</span>
+        <h2>From Passion to <span style="color:var(--blue-glow)">Profession</span></h2>
+        <p>HP Peter Tech Studio was founded with a single purpose: to make professional digital services accessible to every business, no matter the size. What started as a solo freelance project quickly grew into a full-service digital studio serving clients across multiple industries.</p>
+        <p>We believe that every business deserves a strong online presence. From small local shops to growing enterprises, we bring the same level of dedication, creativity, and technical excellence to every project we undertake.</p>
+        <p>Our team combines deep technical skills with a keen eye for design and a passion for solving real business problems through technology.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark-2)">
+  <div class="container">
+    <span class="tag" data-aos="fade-up">What Drives Us</span>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Our Core Values</h2>
+    <div class="values-grid">
+      <div class="value-card" data-aos="zoom-in"><div class="value-icon">💡</div><h3>Innovation</h3><p>We stay ahead of digital trends to bring modern, forward-thinking solutions to our clients.</p></div>
+      <div class="value-card" data-aos="zoom-in" data-aos-delay="80"><div class="value-icon">🤝</div><h3>Integrity</h3><p>Transparent pricing, honest timelines, and clear communication — no surprises.</p></div>
+      <div class="value-card" data-aos="zoom-in" data-aos-delay="160"><div class="value-icon">⚡</div><h3>Excellence</h3><p>We don't ship average work. Every project gets our full attention and best effort.</p></div>
+      <div class="value-card" data-aos="zoom-in" data-aos-delay="240"><div class="value-icon">🌍</div><h3>Impact</h3><p>We measure our success by the real-world results we create for clients' businesses.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="tag" data-aos="fade-up">Our Journey</span>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Timeline</h2>
+    <div class="timeline" data-aos="fade-up" data-aos-delay="150">
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2021</div><div class="tl-title">Studio Founded</div><div class="tl-desc">HP Peter Tech Studio was established with a focus on website development for local businesses.</div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2022</div><div class="tl-title">Expanded to QR Solutions</div><div class="tl-desc">Added QR code generation services, becoming the go-to provider for digital menus and business QR tools.</div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2023</div><div class="tl-title">50+ Projects Completed</div><div class="tl-desc">Reached the 50-project milestone and expanded the team. Launched e-commerce and landing page services.</div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2024</div><div class="tl-title">100+ Happy Clients</div><div class="tl-desc">Passed 100 client projects, earning a strong reputation for quality, speed, and reliability.</div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2025</div><div class="tl-title">Growing Strong</div><div class="tl-desc">Continuing to grow with new services, a larger team, and an expanded portfolio of successful digital projects.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark-2)">
+  <div class="container">
+    <span class="tag" data-aos="fade-up">Our Team</span>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Meet the Team</h2>
+    <div class="team-grid">
+      <div class="team-card" data-aos="fade-up"><div class="team-avatar"><img style="border-radius: 50%;"src="images/WhatsApp Image 2026-03-16 at 5.57.12 AM.jpeg"><!-- 👨‍💻--></div><h3>HP Peter</h3><p>Founder & Lead Developer</p></div> 
+      <div class="team-card" data-aos="fade-up" data-aos-delay="80"><div class="team-avatar">🎨</div><h3>UI/UX Lead</h3><p>Design & Creative Direction</p></div>
+      <div class="team-card" data-aos="fade-up" data-aos-delay="160"><div class="team-avatar">📱</div><h3>QR Specialist</h3><p>QR Systems & Integrations</p></div>
+      <div class="team-card" data-aos="fade-up" data-aos-delay="240"><div class="team-avatar">📊</div><h3>Digital Strategist</h3><p>SEO & Marketing Setup</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="padding-top:0;border-top:none">
+      <p>© 2025 <a style="color: blue;" href="https//hppeter830s.github.io/hppetertech/">HP Peter Tech Studio</a>. All rights reserved.</p>
+      <div class="footer-legal"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

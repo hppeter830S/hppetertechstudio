@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | HP Peter Tech Studio</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .filter-bar {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+      }
+      .filter-btn {
+        padding: 0.45rem 1.1rem;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        background: rgba(37, 99, 235, 0.1);
+        border: 1px solid rgba(37, 99, 235, 0.2);
+        color: var(--gray-mid);
+        cursor: pointer;
+        transition: var(--transition);
+      }
+      .filter-btn.active,
+      .filter-btn:hover {
+        background: var(--blue);
+        color: var(--white);
+        border-color: var(--blue);
+      }
+      .portfolio-card[data-hidden] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="site-header">
+      <div class="container header-inner">
+        <a href="index.html"
+          ><img src="images/logo.png" alt="Logo" class="header-logo"
+        /></a>
+        <a href="index.html" class="header-brand">HP Peter Tech Studio</a>
+      </div>
+    </header>
+    <nav id="navbar">
+      <div class="container nav-inner">
+        <div class="nav-logo-mini">
+          <img src="images/logo.png" alt="Logo" /><span
+            >HP Peter Tech Studio</span
+          >
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a><a href="services.html">Services</a>
+          <a href="portfolio.html" class="active">Portfolio</a
+          ><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+        <button class="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <a href="index.html">Home</a><a href="services.html">Services</a
+        ><a href="portfolio.html">Portfolio</a> <a href="about.html">About</a
+        ><a href="contact.html">Contact</a>
+        <a
+          href="contact.html"
+          class="btn btn-primary"
+          style="margin-top: 0.5rem"
+          >Get a Quote</a
+        >
+      </div>
+    </nav>
+
+    <div class="page-hero">
+      <div class="container">
+        <span class="tag">Our Work</span>
+        <h1>Full Portfolio</h1>
+        <p>
+          Explore our complete collection of websites, QR solutions, and digital
+          projects.
+        </p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="website">Websites</button>
+          <button class="filter-btn" data-filter="qr">QR Codes</button>
+          <button class="filter-btn" data-filter="landing">
+            Landing Pages
+          </button>
+          <!-- <button class="filter-btn" data-filter="ecommerce">E-Commerce</button> -->
+        </div>
+        <div class="portfolio-grid" id="portfolio-grid">
+          <div
+            class="portfolio-card"
+            data-category="website"
+            data-aos="fade-up"
+            data-lightbox="true"
+            data-icon="🍕"
+            data-title="Restaurant Booking Website"
+            data-desc="Fully responsive restaurant website with table bookings, digital menu QR integration, and admin panel for real-time reservation management."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #1e3a5f, #0a1628)"
+              >
+                🍕
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Restaurant Booking Website</h3>
+              <p>Online table booking system with QR menu.</p>
+              <div class="portfolio-tags">
+                <span class="ptag">Website</span><span class="ptag">QR</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="portfolio-card"
+            data-category="landing"
+            data-aos="fade-up"
+            data-aos-delay="80"
+            data-lightbox="true"
+            data-icon="🏋️"
+            data-title="Gym & Fitness Landing Page"
+            data-desc="High-converting landing page for a local gym. Features animated stats counters, membership plan cards, trainer profiles, and WhatsApp contact integration."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #1a2744, #0f172a)"
+              >
+                🏋️
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Gym & Fitness Landing Page</h3>
+              <p>Animated landing page boosting gym sign-ups.</p>
+              <div class="portfolio-tags">
+                <span class="ptag">Landing Page</span
+                ><span class="ptag">Animations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="portfolio-card" data-category="ecommerce" data-aos="fade-up" data-aos-delay="160" 
+        data-lightbox="true" data-icon="🛍️" data-title="E-Commerce Store Demo"
+        data-desc="Complete demo e-commerce storefront with product filtering, cart, wishlist, and checkout flow — all mobile-first.">
+        <div class="portfolio-img"><div class="portfolio-img-inner" style="background:linear-gradient(135deg,#0e2a40,#0a1628);">🛍️</div><div class="portfolio-overlay">🔍</div></div>
+        <div class="portfolio-info"><h3>E-Commerce Store Demo</h3><p>Full shopping experience with cart & checkout.</p>
+        <div class="portfolio-tags"><span class="ptag">E-Commerce</span><span class="ptag">UX/UI</span></div></div>
+      </div>-->
+
+          <div
+            class="portfolio-card"
+            data-category="qr"
+            data-aos="fade-up"
+            data-lightbox="true"
+            data-icon="📱"
+            data-title="QR Menu System"
+            data-desc="Dynamic QR menu system for cafes. Customers scan to view the menu. Easy owner panel to update items, prices, and specials with no coding needed."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #1e3a5f, #0d1b35)"
+              >
+                📱
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>QR Menu System</h3>
+              <p>Scan-to-order menus for cafés & restaurants.</p>
+              <div class="portfolio-tags">
+                <span class="ptag">QR Code</span
+                ><span class="ptag">Web App</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="portfolio-card"
+            data-category="website"
+            data-aos="fade-up"
+            data-aos-delay="80"
+            data-lightbox="true"
+            data-icon="🏢"
+            data-title="Corporate Business Site"
+            data-desc="Multi-page website for a consulting firm. Includes team profiles, services overview, blog, Google Maps, and a full contact notification system."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #1a2744, #0a0f1e)"
+              >
+                🏢
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Corporate Business Site</h3>
+              <p>Professional multi-page consulting firm website.</p>
+              <div class="portfolio-tags">
+                <span class="ptag">Multi-page</span
+                ><span class="ptag">SEO</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="portfolio-card"
+            data-category="website"
+            data-aos="fade-up"
+            data-aos-delay="160"
+            data-lightbox="true"
+            data-icon="🎓"
+            data-title="School Portal Website"
+            data-desc="School website with news, event calendar, staff directory, admissions form, and parent portal with announcements and document download."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #0f172a, #1e3a5f)"
+              >
+                🎓
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>School Portal Website</h3>
+              <p>Events, news, and parent portal for schools.</p>
+              <div class="portfolio-tags">
+                <span class="ptag">Portal</span
+                ><span class="ptag">Responsive</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="portfolio-card"
+            data-category="landing"
+            data-aos="fade-up"
+            data-lightbox="true"
+            data-icon="💼"
+            data-title="Real Estate Landing Page"
+            data-desc="Elegant landing page for a real estate agency showcasing properties, agent bios, and a lead capture form — increased inquiries significantly within weeks."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #1e3a5f, #0f172a)"
+              >
+                💼
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Real Estate Landing Page</h3>
+              <p>Property showcase with lead capture form.</p>
+              <div class="portfolio-tags">
+                <span class="ptag">Landing Page</span
+                ><span class="ptag">Real Estate</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="portfolio-card"
+            data-category="qr"
+            data-aos="fade-up"
+            data-aos-delay="80"
+            data-lightbox="true"
+            data-icon="🎟️"
+            data-title="Event QR Ticket System"
+            data-desc="QR-based ticketing system for a local event. Tickets generated with unique QR codes, scanned at entrance for verification. Reduced paper ticketing costs by 80%."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #0a1628, #1a2744)"
+              >
+                🎟️
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Event QR Ticket System</h3>
+              <p>Digital tickets with QR verification at entry.</p>
+              <div class="portfolio-tags">
+                <span class="ptag">QR Code</span
+                ><span class="ptag">Events</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="portfolio-card"
+            data-category="ecommerce"
+            data-aos="fade-up"
+            data-aos-delay="160"
+            data-lightbox="true"
+            data-icon="👗"
+            data-title="Fashion Boutique Store"
+            data-desc="Online fashion store with lookbook gallery, size guide, WhatsApp order integration, and Instagram feed. Elegant design reflecting the brand's aesthetic perfectly."
+          >
+            <div class="portfolio-img">
+              <div
+                class="portfolio-img-inner"
+                style="background: linear-gradient(135deg, #1e3a5f, #0e2a40)"
+              >
+                👗
+              </div>
+              <div class="portfolio-overlay">🔍</div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Fashion Boutique Store</h3>
+              <p>Elegant online store with lookbook & WhatsApp orders.</p>
+              <div class="portfolio-tags">
+                <!-- <span class="ptag">E-Commerce</span -->
+                ><span class="ptag">Fashion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox-overlay">
+      <div class="lightbox-box">
+        <div class="lightbox-close">✕</div>
+        <div class="lightbox-icon"></div>
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-desc"></p>
+        <a href="contact.html" class="btn btn-primary">Get Similar Project →</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-bottom" style="padding-top: 0; border-top: none">
+          <p>
+            © 2025
+            <a
+              style="color: blue"
+              href="https//hppeter830s.github.io/hppetertech/"
+            >
+              HP Peter Tech Studio</a
+            >. All rights reserved.
+          </p>
+          <div class="footer-legal">
+            <a href="terms.html">Terms</a><a href="privacy.html">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top">↑</button>
+    <script src="script.js"></script>
+    <script>
+      // Portfolio filter
+      document.querySelectorAll(".filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          const filter = btn.dataset.filter;
+          document.querySelectorAll(".portfolio-card").forEach((card) => {
+            if (filter === "all" || card.dataset.category === filter) {
+              card.style.display = "";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
