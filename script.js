@@ -225,26 +225,57 @@ document.querySelectorAll('[data-lightbox]').forEach(card => {
   });
 });
 
-// ===== CONTACT FORM =====
+// ===== CONTACT FORM HANDLING =====
 const contactForm = document.getElementById('contact-form');
-contactForm?.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const btn = contactForm.querySelector('button[type="submit"]');
-  const success = document.querySelector('.form-success');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
+const formStatus = document.querySelector('.form-success');
 
-  // Integrate with Formspree: change action URL to your Formspree endpoint
-  // const formData = new FormData(contactForm);
-  // await fetch('https://formspree.io/f/YOUR_ID', { method: 'POST', body: formData });
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const btn = contactForm.querySelector('button[type="submit"]');
+    const formData = new FormData(contactForm);
+    
+    // UI Feedback
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
 
-  setTimeout(() => {
-    btn.textContent = 'Send Message';
-    btn.disabled = false;
-    contactForm.reset();
-    if (success) { success.style.display = 'block'; setTimeout(() => success.style.display = 'none', 4000); }
-  }, 1200);
-});
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        // Success: Clear form and show message
+        contactForm.reset();
+        if (formStatus) {
+          formStatus.style.display = 'block';
+          formStatus.textContent = "✅ Message sent! We'll get back to you soon.";
+          formStatus.style.color = "#10b981"; // Green color
+          setTimeout(() => { formStatus.style.display = 'none'; }, 5000);
+        }
+      } else {
+        const data = await response.json();
+        throw new Error(data.errors ? data.errors[0].message : "Submission failed");
+      }
+    } catch (error) {
+      // Error: Show what went wrong
+      if (formStatus) {
+        formStatus.style.display = 'block';
+        formStatus.style.color = "#dc2626"; // Red color
+        formStatus.textContent = "❌ Oops! " + error.message;
+      }
+    } finally {
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+    }
+  });
+}
+
 
 // ===== BACK TO TOP =====
 backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
